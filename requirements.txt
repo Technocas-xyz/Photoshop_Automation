@@ -1,0 +1,14 @@
+# Pinned lower bounds. On Python 3.11-3.13 the exact versions in the comments
+# are known-good; on newer interpreters pip resolves the latest compatible
+# wheels. If you are on 3.11-3.13 and want reproducibility, pin to the ==
+# versions shown in the comment on each line.
+fastapi>=0.115.6          # tested with 0.115.6
+uvicorn[standard]>=0.34.0 # tested with 0.34.0
+python-multipart>=0.0.20  # tested with 0.0.20
+playwright>=1.49.1        # tested with 1.49.1
+Pillow>=11.1.0            # tested with 11.1.0
+numpy>=2.2.1              # tested with 2.2.1
+opencv-python-headless>=4.11.0.86  # tested with 4.11.0.86
+python-dotenv>=1.0.1     # .env support for connection config
+pytest>=8.3.4            # test suite (dev)
+httpx>=0.28.1            # required by FastAPI TestClient (dev)
